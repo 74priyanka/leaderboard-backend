@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 const mongoUri = process.env.MONGO_URI;
+console.log("MongoDB URI:", process.env.MONGO_URI); // Add this line for debugging
 
 if (!mongoUri) {
   console.error("MongoDB URI not defined in environment variables");
